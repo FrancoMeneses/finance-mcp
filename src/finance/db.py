@@ -1,5 +1,5 @@
 """
-Database access layer for Finanzas MCP.
+Database access layer for Finance MCP.
 
 All database operations go through this module.
 Uses parameterized queries to prevent SQL injection.

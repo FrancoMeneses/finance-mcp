@@ -1,5 +1,5 @@
 """
-Finanzas MCP Server
+Finance MCP Server
 
 Personal finance management via Model Context Protocol.
 Provides tools for managing accounts, transactions, debts, savings, and more.
@@ -53,7 +53,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Database path from environment or default
-DB_PATH = os.environ.get("DB_PATH", str(Path(__file__).resolve().parent.parent / "finanzas.db"))
+DB_PATH = os.environ.get("DB_PATH", str(Path(__file__).resolve().parent.parent / "finance.db"))
 
 
 # ============================================================
@@ -749,6 +749,6 @@ def get_monthly_report(year: int, month: int) -> dict:
 # ============================================================
 
 if __name__ == "__main__":
-    logger.info("Starting Finanzas MCP Server...")
+    logger.info("Starting Finance MCP Server...")
     logger.info("Database: %s", DB_PATH)
     mcp.run()

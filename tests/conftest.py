@@ -1,4 +1,4 @@
-"""Test fixtures for Finanzas MCP."""
+"""Test fixtures for Finance MCP."""
 
 import pytest
 import sqlite3

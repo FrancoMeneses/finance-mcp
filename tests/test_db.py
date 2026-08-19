@@ -1,7 +1,7 @@
 """Tests for database operations."""
 
 import pytest
-from src.finanzas.db import (
+from src.finance.db import (
     get_accounts, create_account, get_account_by_id,
     get_categories,
     create_transaction, get_transactions,

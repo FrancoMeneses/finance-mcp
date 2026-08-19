@@ -1,5 +1,5 @@
 -- ============================================================
--- Finanzas MCP - Database Schema
+-- Finance MCP - Database Schema
 -- Personal finance management via Model Context Protocol
 -- ============================================================
 

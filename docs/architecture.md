@@ -2,7 +2,7 @@
 
 ## Overview
 
-Finanzas MCP is a Model Context Protocol server for personal finance management. It provides structured tools for managing accounts, transactions, debts, savings, and more.
+Finance MCP is a Model Context Protocol server for personal finance management. It provides structured tools for managing accounts, transactions, debts, savings, and more.
 
 ## Design Principles
 

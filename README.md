@@ -1,4 +1,4 @@
-# Finanzas MCP
+# Finance MCP
 
 Personal finance management via Model Context Protocol (MCP).
 
@@ -19,14 +19,14 @@ This MCP server provides tools for managing personal finances:
 
 ```bash
 # Clone the repository
-git clone https://github.com/FrancoMeneses/finanzas-mcp.git
-cd finanzas-mcp
+git clone https://github.com/FrancoMeneses/finance-mcp.git
+cd finance-mcp
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Initialize the database (optional - server creates it on first run)
-sqlite3 finanzas.db < schema/init.sql
+sqlite3 finance.db < schema/init.sql
 ```
 
 ## Usage
@@ -37,21 +37,21 @@ Add to `~/.hermes/config.yaml`:
 
 ```yaml
 mcp_servers:
-  finanzas:
+  finance:
     command: "python3"
-    args: ["/path/to/finanzas-mcp/src/finanzas/server.py"]
+    args: ["/path/to/finance-mcp/src/finance/server.py"]
     env:
-      DB_PATH: "/path/to/finanzas.db"
+      DB_PATH: "/path/to/finance.db"
 ```
 
 ### Standalone
 
 ```bash
 # Set database path
-export DB_PATH="/path/to/finanzas.db"
+export DB_PATH="/path/to/finance.db"
 
 # Run the server
-python src/finanzas/server.py
+python src/finance/server.py
 ```
 
 ## Available Tools
@@ -114,13 +114,13 @@ See `schema/init.sql` for the complete database schema.
 ## Project Structure
 
 ```
-finanzas-mcp/
+finance-mcp/
 ├── README.md
 ├── requirements.txt
 ├── schema/
 │   └── init.sql         # Database schema
 ├── src/
-│   └── finanzas/
+│   └── finance/
 │       ├── __init__.py
 │       ├── server.py    # MCP server (FastMCP)
 │       ├── db.py        # Database access layer
