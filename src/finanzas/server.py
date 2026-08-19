@@ -61,7 +61,7 @@ DB_PATH = os.environ.get("DB_PATH", str(Path(__file__).resolve().parent.parent /
 # ============================================================
 
 mcp = FastMCP(
-    "Finanzas",
+    "Finance",
     instructions="""Personal finance management tools.
     
     Use these tools to manage:
