@@ -18,7 +18,7 @@ from typing import Optional
 
 from mcp.server.fastmcp import FastMCP
 
-from db import (
+from finance.db import (
     get_accounts, get_account_by_id, create_account, update_account,
     get_categories, get_category_by_id,
     get_transactions, create_transaction,
